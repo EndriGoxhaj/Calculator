@@ -1,38 +1,57 @@
-.container{
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+.content{
     display: flex;
     justify-content: center;
 }
-.left{
+.wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 4);
+    padding: 20px;
+    border-radius: 25px;
+
 }
 .display{
-    border: solid blue 2px;
-    border-radius: 20px;
-    border-collapse: separate;
-    width: 300px;
-    margin: 4px;
+    display: flex;
     background-color: white;
+    border-radius: 25px;
+    height: 100px;
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: roboto;
 }
 button{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     height: 100px;
     width: 100px;
     border-radius: 25%;
-    margin: 2px;
+    border: none;
+    font-size: 2em;
+    background-color: grey;
+    color: white;
+    font-family: roboto;
+    font-weight: bold;
 }
-.right{
+.operator{
+    color: white;
+    background-color: orange;
+}
+.row{
     display: flex;
-    flex-direction: column;
-}
-.row1,.row2,.row3,.row4,.row5{
-    display: flex;
-    margin: 2px;
-}
-.wrapper{
-    background-color: rgb(65, 66, 67);
-    padding: 20px;
-    border-radius: 25px;
+    padding: 5px;
+    gap: 5px;
+
 }
 button:hover{
     cursor: pointer;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
 }
