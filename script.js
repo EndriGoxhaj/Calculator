@@ -43,12 +43,17 @@ operatorsButton.forEach((operators)=>{
             operator = operators.textContent;
         }
         else if(operator != ""){
-            secondNumber = tempNumber.join("");
-            operate();
-            tempNumber.length = 0;
-            display.textContent = result;
-            firstNumber = result;
-            operator = operators.textContent;
+            if(firstNumber != "" && operator != "" && tempNumber.length != 0){
+                secondNumber = tempNumber.join("");
+                operate();
+                tempNumber.length = 0;
+                display.textContent = result;
+                firstNumber = result;
+                operator = operators.textContent;
+            }
+            else{
+                //DO NOTHING
+            }
         }
     })
 })

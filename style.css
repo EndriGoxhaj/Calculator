@@ -1,3 +1,11 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: roboto;
+}
 @font-face {
     font-family: roboto;
     src: url(./fonts/Roboto-Regular.ttf);
@@ -14,7 +22,7 @@
     background-color: rgb(4, 4, 4);
     padding: 20px;
     border-radius: 25px;
-
+    margin: 20px;
 }
 .display{
     display: flex;
@@ -45,6 +53,9 @@ button{
     color: white;
     background-color: orange;
 }
+.equals{
+    background-color: rgb(210, 139, 139);
+}
 .row{
     display: flex;
     padding: 5px;
@@ -54,4 +65,9 @@ button{
 button:hover{
     cursor: pointer;
     background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.footer{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px;
 }
